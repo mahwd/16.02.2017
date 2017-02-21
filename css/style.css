@@ -1,12 +1,10 @@
 html, body {
   margin: 0;
   padding:0;
+  font-family: 'Patrick Hand', cursive;
 }
-@font-face {
-font-family: alboroto;
-src: url(ALBOROTO.otf);
-}
-/*common classes*/
+
+                                /*common classes*/
 .fl {
   float: left;
 }
@@ -28,20 +26,18 @@ src: url(ALBOROTO.otf);
 .border {
   border: 1px solid black;
 }
+
 p{
-  font-size: 14px;
   color: #fff;
-  margin:0 auto;
-  font-family: sans-serif;
 }
 .cl {
   clear:both;
 }
 
-/*main divs*/
+                                /*main divs*/
 .main {
   width: 100%;
-  height: 2000px;
+  height: 100%;
   background: #f5f5f5;
 }
 .ws {
@@ -50,29 +46,6 @@ p{
   margin: 0 auto;
 }
 
-
-
-
-
-.portfolio {
-width: 100%;
-height:600px;
-}
-
-.services{
-width: 100%;
-height:500px;
-}
-
-.silicon-valley {
-width: 100%;
-height:400px;
-}
-
-.our-blog {
-width: 100%;
-height:600px;
-}
 
 .team {
 width: 100%;
@@ -90,33 +63,33 @@ height:50px;
 }
 
 
-/*main-head section*/
+                                /*main-head section*/
 .main-head {
   background: #2B2B33;
   width: 100%;
   height: 60px;
 }
 .logo {
-    width: 80px;
+    width: 60px;
     height: 60px;
   }
 img {
     height: 100%;
-
-  }
+    width: 100%;
+}
 .menu {
 width: 400px;
-height: 50px;
-  }
+height: 60px;
+}
 .menuItem {
     width: 15%;
-    height: 50%;
-    margin-top:20px;
-    padding:0.5px;
+    height: 100%;
+    margin-top: 9px;
+    box-sizing: border-box;
     margin-left: 2px;
     display: inline-block;
 }
-/*head section*/
+                                /*head section*/
 
 .head {
 width: 100%;
@@ -127,7 +100,7 @@ padding-top: 60px;
 .heading-text {
   color: white;
   font-size: 60px;
-  font-family: fantasy;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -135,7 +108,7 @@ padding-top: 60px;
 color: #fff;
 font-size: 25px;
 text-align:center;
-font-family: fantasy;
+font-weight: bold;
 }
 
 .search {
@@ -162,17 +135,421 @@ input {
 }
 
 .social-media {
-  width: 500px;
-  height: 60px;
-  border:1px solid black;
-  
+  width: 470px;
+  height:90px;
   margin: 0 auto;
+  margin-top: 40px;
+}
+.social-media-icons  {
+  width: 18.7%;
+  height: 100%;
+  float: left;
+  border-radius:50%;
 }
 
-/*statement section*/
+.social-media div:nth-child(3) {
+margin: 0 auto;
+}
+
+
+.social-media div:nth-child(n+4) {
+  float: right;
+  margin-left: 5px;
+}
+
+.social-media div:nth-child(-n+2) {
+  float: left;
+  margin-right: 5px;
+}
+
+
+                                  /*statement section*/
 
 .statement {
 width: 100%;
-height:200px;
+height:180px;
 background: #FAB602;
+padding-top: 20px;
+margin-top: 0px;
+}
+.text {
+  margin-top: 0;
+}
+.text h1 {
+  word-wrap: break-word;
+  font-size:150%;
+  text-align: center;
+  color:#fff;
+}
+.text p1 {
+  word-wrap: break-word;
+  font-size:100%;
+  margin-top: 0;
+  text-align: center;
+  color:#fff;
+}
+                                        /*portfolio*/
+
+.portfolio {
+  width: 100%;
+  height: 1350px;
+  background: lightgray;
+  padding-top: 25px;
+}
+
+.pp-icon {
+  width: 128px;
+  height: 128px;
+  display:inline-block;
+  margin: 0 50%;
+}
+.port-text {
+margin: 20px 54% 0px;
+font-weight: bold;
+}
+.port-pic {
+width: 100%;
+height: 350px;
+
+}
+.pic-items {
+  float:left;
+  width: 31%;
+  height: 100%;
+}
+.port-pic div:first-child {
+margin-right: 3.5%;
+}
+.port-pic div:last-child {
+margin-left: 3.5%;
+}
+.pic-text {
+  float:left;
+  width: 31%;
+  height: 150px;
+}
+.heading {
+  color: #FAB602;
+  font-weight: bold;
+  text-align: center;
+}
+.port-info{
+  margin-top: 5px;
+  height: 200px;
+  text-align: justify;
+}
+.port-info div:first-child {
+margin-right: 3.5%;
+}
+.port-info div:last-child {
+margin-left: 3.5%;
+}
+                                /*services section*/
+
+.services{
+padding-top: 20px;
+width: 100%;
+height:500px;
+background: lightgray;
+}
+.service-text {
+  width: 200px;
+  height: 50px;
+  margin: 10px 46%;
+
+}
+.main-service {
+  width:100%;
+  height:200px;
+}
+.service-type {
+  width: 23%;
+  height: 100%;
+  background: #fff;
+}
+.main-service div:nth-child(-n+2) {
+  margin-right: 2.6666%;
+}
+.main-service div:last-child {
+  margin-left: 2.6666%;
+}
+.service-icon {
+  width: 90%;
+  height: 47%;
+  float: top;
+  border: .1px solid red;
+}
+.service-img {
+  margin: 2px 25%;
+  width: 50%;
+  height: 50%;
+}
+.lorem {
+  font-size: 14px;
+  color: #000;
+  text-align: justify;
+  }
+.service-type h1 {
+  margin:0px;
+  padding: 0px;
+  text-align: center;
+}
+.service-type p {
+text-align: center;
+}
+
+                                /*silicon valley*/
+.silicon-valley {
+  width: 100%;
+  height: 550px;
+  box-sizing: border-box;
+  padding: 150px 0;
+  background-color: #FAB602;
+}
+.silicon-valley .ws h1 {
+  width: 60%;
+  font-size: 38px;
+  color: #000;
+  text-align: left;
+}
+.silicon-valley .ws p{
+
+font-size: 22px;
+text-align: left;
+color: #000;
+}
+
+                                /*OUR blog*/
+.our-blog {
+  width: 100%;
+  height: 900px;
+  background: #ccc;
+  box-sizing: border-box;
+  padding-top: 75px;
+}
+.blog-logo{
+  width: 50px;
+  height: 50px;
+  background-color: #231F13;
+  border: 1px solid #231F13;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 5px;
+}
+.ws h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #231F13;
+  text-shadow: 2px 2px 2px #000;
+}
+.bear {
+  width: 100%;
+  height: 400px;
+}
+.bear-items {
+  width:28%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+  background-color: rgba(#aaaaaa, 0.53);
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  box-shadow: 2px 10px 10px #000;
+}
+.bear div:nth-child(2) {
+  margin: 0px 8%;
+}
+.bear .bear-items img {
+  width: 100%;
+  float: left;
+  height:60%;
+}
+.bear .bear-items .date{
+  font-size: 14px;
+  color: #aaa;
+  float: right;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+.bear .bear-items .paragraph{
+  font-size: 14px;
+  margin: 2px;
+  color: #000;
+  margin-left: 5px;
+  text-shadow: 0px 1px 1px #000;
+}
+.bear .bear-items h1 {
+  font-size: 1.3em;
+  text-align: left;
+  margin :0px;
+  margin-left: 5px;
+  text-shadow: 0px 1px 1px #000;
+  }
+.bear .bear-items a{
+  text-decoration: none;
+  color: orange;
+  margin-left: 5px;
+  text-shadow: 0px 1px 1px #000;
+  }
+.blog-button {
+  width: 150px;
+  height: 45px;
+  background: orange;
+  display: inline-block;
+  border: 1px solid orange;
+  border-radius: 2px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 42%;
+  margin-top: 50px;
+  box-shadow: 2px 10px 10px #000;
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+}
+                                      /*team*/
+.team {
+  width: 100%;
+  height: 620px;
+  background:#231F13;
+  margin-top: 0px;
+  box-sizing: border-box;
+  padding: 45px;
+}
+.team-icon{
+  width: 50px;
+  height: 50px;
+  background-color: #aaa;
+  border: 1px solid #aaa;
+  border-radius: 50%;
+  margin: 0 auto;
+  color: #231F13;
+  font-size: 25px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 5px;
+  text-shadow: 0px 1px 1px #000;
+
+}
+.ws h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #aaa;
+  text-shadow: 1px 2px 1px #000;
+}
+.team-member {
+  width: 70%;
+  height: 100px;
+  background: #231F13;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.members {
+  width: 18%;
+  height: 105px;
+  border:1px solid #231F13;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background:#fff;
+  background-image: url(../img/jared.jpg);
+  background-size: cover;
+  box-shadow: 0px 1px 1px #000;
+
+}
+.team-text {
+  width: 70%;
+  height: 50px;
+  background: #231F13;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.team-text p   {
+  width: 18%;
+  text-align: center;
+  text-shadow: 2px 1px 1px #000;
+}
+.more-heading {
+  display: flex;
+  justify-content: center;
+
+}
+.more-heading p:first-child {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: right;
+  border-right: 1px solid black;
+}
+.more-heading p:nth-child(2) {
+  box-sizing: border-box;
+  width: 50%;
+  text-align: left;
+  border-left: 1px solid black;
+}
+.ws>p{
+  font-size: 12px;
+  color: #fff;
+  text-align:center;
+}
+.contact {
+  width: 100%;
+  height: 500px;
+  background:#231F13;
+}
+.contact-icon {
+  width: 50px;
+  height: 50px;
+  background: #231F13;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: inline-block;
+  margin-left:48%;
+  color: #fff;
+  text-shadow: 2px 10px 10px #000;
+}
+.contact-us {
+  text-align: center;
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 30px;
+  text-shadow: 2px 10px 10px #000;
+}
+.input {
+  width: 45%;
+  height: 25px;
+  margin-bottom: 21px;
+  background: #aaa;
+  border-color: #aaa;
+  box-shadow: 2px 5px 5px #000;
+}
+.main-input {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.text-area {
+  background: #aaa;
+  border-color: #aaa;
+  box-shadow: 2px 5px 5px #000;
+}
+.submit-button {
+  width: 150px;
+  height: 40px;
+  background: #EAB108;
+  color: #fff;
+  box-shadow: 2px 10px 10px #000;
+  margin-top: 50px;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding-top: 8px;
+  text-shadow: 2px 10px 10px #000;
 }
